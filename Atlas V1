@@ -1,0 +1,446 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+
+designed using localmaze gui creator
+]=]
+
+-- Instances: 65 | Scripts: 16 | Modules: 0 | Tags: 0
+local LMG2L = {};
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui
+LMG2L["ScreenGui_1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+LMG2L["ScreenGui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Console
+LMG2L["Console_2"] = Instance.new("Frame", LMG2L["ScreenGui_1"]);
+LMG2L["Console_2"]["BorderSizePixel"] = 0;
+LMG2L["Console_2"]["BackgroundColor3"] = Color3.fromRGB(151, 38, 38);
+LMG2L["Console_2"]["Size"] = UDim2.new(0, 510, 0, 270);
+LMG2L["Console_2"]["Position"] = UDim2.new(0, 662, 0, 226);
+LMG2L["Console_2"]["Name"] = [[Console]];
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Console.LocalScript
+LMG2L["LocalScript_3"] = Instance.new("LocalScript", LMG2L["Console_2"]);
+
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Console.UICorner
+LMG2L["UICorner_4"] = Instance.new("UICorner", LMG2L["Console_2"]);
+
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Console.ConsoleScroll
+LMG2L["ConsoleScroll_5"] = Instance.new("ScrollingFrame", LMG2L["Console_2"]);
+LMG2L["ConsoleScroll_5"]["BorderSizePixel"] = 3;
+LMG2L["ConsoleScroll_5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["ConsoleScroll_5"]["Name"] = [[ConsoleScroll]];
+LMG2L["ConsoleScroll_5"]["AutomaticCanvasSize"] = Enum.AutomaticSize.XY;
+LMG2L["ConsoleScroll_5"]["Size"] = UDim2.new(0, 484, 0, 220);
+LMG2L["ConsoleScroll_5"]["ScrollBarImageColor3"] = Color3.fromRGB(255, 0, 0);
+LMG2L["ConsoleScroll_5"]["Position"] = UDim2.new(0, 12, 0, 38);
+LMG2L["ConsoleScroll_5"]["BorderColor3"] = Color3.fromRGB(140, 0, 0);
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Console.ConsoleScroll.UIListLayout
+LMG2L["UIListLayout_6"] = Instance.new("UIListLayout", LMG2L["ConsoleScroll_5"]);
+
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Console.ConsoleScroll.LocalScript2
+LMG2L["LocalScript2_7"] = Instance.new("LocalScript", LMG2L["ConsoleScroll_5"]);
+LMG2L["LocalScript2_7"]["Name"] = [[LocalScript2]];
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Console.ConsoleScroll.LocalScript
+LMG2L["LocalScript_8"] = Instance.new("LocalScript", LMG2L["ConsoleScroll_5"]);
+
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Console.Title
+LMG2L["Title_9"] = Instance.new("TextLabel", LMG2L["Console_2"]);
+LMG2L["Title_9"]["BorderSizePixel"] = 0;
+LMG2L["Title_9"]["TextSize"] = 28;
+LMG2L["Title_9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Title_9"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Title_9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Title_9"]["BackgroundTransparency"] = 1;
+LMG2L["Title_9"]["Size"] = UDim2.new(0, 302, 0, 94);
+LMG2L["Title_9"]["Text"] = [[Console]];
+LMG2L["Title_9"]["Name"] = [[Title]];
+LMG2L["Title_9"]["Position"] = UDim2.new(0, 90, 0, -28);
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Console.UIStroke
+LMG2L["UIStroke_a"] = Instance.new("UIStroke", LMG2L["Console_2"]);
+LMG2L["UIStroke_a"]["Thickness"] = 3;
+LMG2L["UIStroke_a"]["Color"] = Color3.fromRGB(100, 0, 0);
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Console.ImageLabel
+LMG2L["ImageLabel_b"] = Instance.new("ImageLabel", LMG2L["Console_2"]);
+LMG2L["ImageLabel_b"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel_b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["ImageLabel_b"]["ImageTransparency"] = 0.5;
+-- LMG2L["ImageLabel_b"]["ImageContent"] = ;
+LMG2L["ImageLabel_b"]["ImageColor3"] = Color3.fromRGB(145, 0, 0);
+LMG2L["ImageLabel_b"]["Image"] = [[rbxassetid://6396719811]];
+LMG2L["ImageLabel_b"]["Size"] = UDim2.new(0, 72, 0, 70);
+LMG2L["ImageLabel_b"]["BackgroundTransparency"] = 1;
+LMG2L["ImageLabel_b"]["Rotation"] = 10;
+LMG2L["ImageLabel_b"]["Position"] = UDim2.new(0, 418, 0, 198);
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.TextButton
+LMG2L["TextButton_c"] = Instance.new("TextButton", LMG2L["ScreenGui_1"]);
+LMG2L["TextButton_c"]["TextWrapped"] = true;
+LMG2L["TextButton_c"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_c"]["TextScaled"] = true;
+LMG2L["TextButton_c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_c"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+LMG2L["TextButton_c"]["BackgroundColor3"] = Color3.fromRGB(151, 38, 38);
+LMG2L["TextButton_c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_c"]["Size"] = UDim2.new(0, 156, 0, 146);
+LMG2L["TextButton_c"]["Text"] = [[Atlas]];
+LMG2L["TextButton_c"]["Position"] = UDim2.new(0, 970, 0, -10);
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.TextButton.LocalScript
+LMG2L["LocalScript_d"] = Instance.new("LocalScript", LMG2L["TextButton_c"]);
+
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.TextButton.UIStroke
+LMG2L["UIStroke_e"] = Instance.new("UIStroke", LMG2L["TextButton_c"]);
+LMG2L["UIStroke_e"]["Thickness"] = 3;
+LMG2L["UIStroke_e"]["Color"] = Color3.fromRGB(100, 0, 0);
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.TextButton.ImageLabel
+LMG2L["ImageLabel_f"] = Instance.new("ImageLabel", LMG2L["TextButton_c"]);
+LMG2L["ImageLabel_f"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel_f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- LMG2L["ImageLabel_f"]["ImageContent"] = ;
+LMG2L["ImageLabel_f"]["ImageColor3"] = Color3.fromRGB(145, 0, 0);
+LMG2L["ImageLabel_f"]["Image"] = [[rbxassetid://6396719811]];
+LMG2L["ImageLabel_f"]["Size"] = UDim2.new(0, 148, 0, 142);
+LMG2L["ImageLabel_f"]["BackgroundTransparency"] = 1;
+LMG2L["ImageLabel_f"]["Position"] = UDim2.new(0, 6, 0, 24);
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.TextButton.UICorner
+LMG2L["UICorner_10"] = Instance.new("UICorner", LMG2L["TextButton_c"]);
+
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.TextButton.LocalScript2
+LMG2L["LocalScript2_11"] = Instance.new("LocalScript", LMG2L["TextButton_c"]);
+LMG2L["LocalScript2_11"]["Name"] = [[LocalScript2]];
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.TextButton.UIGradient
+LMG2L["UIGradient_12"] = Instance.new("UIGradient", LMG2L["TextButton_c"]);
+LMG2L["UIGradient_12"]["Rotation"] = 90;
+LMG2L["UIGradient_12"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.883, Color3.fromRGB(95, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(95, 0, 0))};
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.TextButton.UIStroke2
+LMG2L["UIStroke2_13"] = Instance.new("UIStroke", LMG2L["TextButton_c"]);
+LMG2L["UIStroke2_13"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke2_13"]["Name"] = [[UIStroke2]];
+LMG2L["UIStroke2_13"]["Thickness"] = 3;
+LMG2L["UIStroke2_13"]["Color"] = Color3.fromRGB(100, 0, 0);
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame
+LMG2L["Frame_14"] = Instance.new("Frame", LMG2L["ScreenGui_1"]);
+LMG2L["Frame_14"]["BorderSizePixel"] = 0;
+LMG2L["Frame_14"]["BackgroundColor3"] = Color3.fromRGB(151, 38, 38);
+LMG2L["Frame_14"]["Selectable"] = true;
+LMG2L["Frame_14"]["Size"] = UDim2.new(0, 594, 0, 328);
+LMG2L["Frame_14"]["Position"] = UDim2.new(0, 86, 0, 24);
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.Source
+LMG2L["Source_15"] = Instance.new("TextBox", LMG2L["Frame_14"]);
+LMG2L["Source_15"]["Name"] = [[Source]];
+LMG2L["Source_15"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["Source_15"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Source_15"]["BorderSizePixel"] = 0;
+LMG2L["Source_15"]["TextWrapped"] = true;
+LMG2L["Source_15"]["TextSize"] = 38;
+LMG2L["Source_15"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Source_15"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+LMG2L["Source_15"]["BackgroundColor3"] = Color3.fromRGB(106, 18, 18);
+LMG2L["Source_15"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Source_15"]["PlaceholderText"] = [[Insert Script...]];
+LMG2L["Source_15"]["Size"] = UDim2.new(0, 348, 0, 180);
+LMG2L["Source_15"]["Position"] = UDim2.new(0, 24, 0, 44);
+LMG2L["Source_15"]["Text"] = [[]];
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.Source.UIStroke
+LMG2L["UIStroke_16"] = Instance.new("UIStroke", LMG2L["Source_15"]);
+LMG2L["UIStroke_16"]["Transparency"] = 0.5;
+LMG2L["UIStroke_16"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_16"]["Thickness"] = 3;
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.Source.UICorner
+LMG2L["UICorner_17"] = Instance.new("UICorner", LMG2L["Source_15"]);
+
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.Source.ImageLabel
+LMG2L["ImageLabel_18"] = Instance.new("ImageLabel", LMG2L["Source_15"]);
+LMG2L["ImageLabel_18"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel_18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["ImageLabel_18"]["ImageTransparency"] = 0.5;
+-- LMG2L["ImageLabel_18"]["ImageContent"] = ;
+LMG2L["ImageLabel_18"]["ImageColor3"] = Color3.fromRGB(255, 0, 0);
+LMG2L["ImageLabel_18"]["Image"] = [[rbxassetid://4861640924]];
+LMG2L["ImageLabel_18"]["Size"] = UDim2.new(0, 52, 0, 52);
+LMG2L["ImageLabel_18"]["BackgroundTransparency"] = 1;
+LMG2L["ImageLabel_18"]["Position"] = UDim2.new(0, 292, 0, 118);
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.Source.TextLabel
+LMG2L["TextLabel_19"] = Instance.new("TextLabel", LMG2L["Source_15"]);
+LMG2L["TextLabel_19"]["TextWrapped"] = true;
+LMG2L["TextLabel_19"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_19"]["TextTransparency"] = 0.8;
+LMG2L["TextLabel_19"]["TextScaled"] = true;
+LMG2L["TextLabel_19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_19"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextLabel_19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_19"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_19"]["Size"] = UDim2.new(0, 250, 0, 92);
+LMG2L["TextLabel_19"]["Text"] = [[-Suported:          Lua and loadstring]];
+LMG2L["TextLabel_19"]["Position"] = UDim2.new(0, -40, 0, 88);
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.Execute
+LMG2L["Execute_1a"] = Instance.new("TextButton", LMG2L["Frame_14"]);
+LMG2L["Execute_1a"]["BorderSizePixel"] = 0;
+LMG2L["Execute_1a"]["TextSize"] = 20;
+LMG2L["Execute_1a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["Execute_1a"]["BackgroundColor3"] = Color3.fromRGB(115, 0, 0);
+LMG2L["Execute_1a"]["Size"] = UDim2.new(0, 154, 0, 50);
+LMG2L["Execute_1a"]["Text"] = [[Execute]];
+LMG2L["Execute_1a"]["Name"] = [[Execute]];
+LMG2L["Execute_1a"]["Position"] = UDim2.new(0, 24, 0, 250);
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.Execute.LocalScript
+LMG2L["LocalScript_1b"] = Instance.new("LocalScript", LMG2L["Execute_1a"]);
+
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.Execute.UIStroke
+LMG2L["UIStroke_1c"] = Instance.new("UIStroke", LMG2L["Execute_1a"]);
+LMG2L["UIStroke_1c"]["Transparency"] = 0.5;
+LMG2L["UIStroke_1c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_1c"]["Thickness"] = 3;
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.UIStroke
+LMG2L["UIStroke_1d"] = Instance.new("UIStroke", LMG2L["Frame_14"]);
+LMG2L["UIStroke_1d"]["Thickness"] = 3;
+LMG2L["UIStroke_1d"]["Color"] = Color3.fromRGB(100, 0, 0);
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.Clear
+LMG2L["Clear_1e"] = Instance.new("TextButton", LMG2L["Frame_14"]);
+LMG2L["Clear_1e"]["BorderSizePixel"] = 0;
+LMG2L["Clear_1e"]["TextSize"] = 20;
+LMG2L["Clear_1e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["Clear_1e"]["BackgroundColor3"] = Color3.fromRGB(115, 0, 0);
+LMG2L["Clear_1e"]["Size"] = UDim2.new(0, 136, 0, 50);
+LMG2L["Clear_1e"]["Text"] = [[Clear]];
+LMG2L["Clear_1e"]["Name"] = [[Clear]];
+LMG2L["Clear_1e"]["Position"] = UDim2.new(0, 190, 0, 250);
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.Clear.LocalScript
+LMG2L["LocalScript_1f"] = Instance.new("LocalScript", LMG2L["Clear_1e"]);
+
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.Clear.UIStroke
+LMG2L["UIStroke_20"] = Instance.new("UIStroke", LMG2L["Clear_1e"]);
+LMG2L["UIStroke_20"]["Transparency"] = 0.5;
+LMG2L["UIStroke_20"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_20"]["Thickness"] = 3;
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.UICorner
+LMG2L["UICorner_21"] = Instance.new("UICorner", LMG2L["Frame_14"]);
+
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.LocalScript
+LMG2L["LocalScript_22"] = Instance.new("LocalScript", LMG2L["Frame_14"]);
+
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.ImageLabel
+LMG2L["ImageLabel_23"] = Instance.new("ImageLabel", LMG2L["Frame_14"]);
+LMG2L["ImageLabel_23"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel_23"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- LMG2L["ImageLabel_23"]["ImageContent"] = ;
+LMG2L["ImageLabel_23"]["ImageColor3"] = Color3.fromRGB(145, 0, 0);
+LMG2L["ImageLabel_23"]["Image"] = [[rbxassetid://6396719811]];
+LMG2L["ImageLabel_23"]["Size"] = UDim2.new(0, 54, 0, 52);
+LMG2L["ImageLabel_23"]["BackgroundTransparency"] = 1;
+LMG2L["ImageLabel_23"]["Position"] = UDim2.new(0, 200, 0, -2);
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.ImageButton
+LMG2L["ImageButton_24"] = Instance.new("ImageButton", LMG2L["Frame_14"]);
+LMG2L["ImageButton_24"]["BorderSizePixel"] = 0;
+-- LMG2L["ImageButton_24"]["ImageContent"] = ;
+LMG2L["ImageButton_24"]["BackgroundColor3"] = Color3.fromRGB(115, 0, 0);
+LMG2L["ImageButton_24"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["ImageButton_24"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]];
+LMG2L["ImageButton_24"]["Size"] = UDim2.new(0, 42, 0, 42);
+LMG2L["ImageButton_24"]["Position"] = UDim2.new(0, 336, 0, 254);
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.ImageButton.LocalScript
+LMG2L["LocalScript_25"] = Instance.new("LocalScript", LMG2L["ImageButton_24"]);
+
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.ImageButton.UIStroke
+LMG2L["UIStroke_26"] = Instance.new("UIStroke", LMG2L["ImageButton_24"]);
+LMG2L["UIStroke_26"]["Transparency"] = 0.5;
+LMG2L["UIStroke_26"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_26"]["Thickness"] = 3;
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.Title
+LMG2L["Title_27"] = Instance.new("TextLabel", LMG2L["Frame_14"]);
+LMG2L["Title_27"]["BorderSizePixel"] = 0;
+LMG2L["Title_27"]["TextSize"] = 28;
+LMG2L["Title_27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Title_27"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Title_27"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Title_27"]["BackgroundTransparency"] = 1;
+LMG2L["Title_27"]["Size"] = UDim2.new(0, 302, 0, 94);
+LMG2L["Title_27"]["Text"] = [[Atlas Executor]];
+LMG2L["Title_27"]["Name"] = [[Title]];
+LMG2L["Title_27"]["Position"] = UDim2.new(0, -42, 0, -28);
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.Frame
+LMG2L["Frame_28"] = Instance.new("Frame", LMG2L["Frame_14"]);
+LMG2L["Frame_28"]["BorderSizePixel"] = 0;
+LMG2L["Frame_28"]["BackgroundColor3"] = Color3.fromRGB(136, 0, 0);
+LMG2L["Frame_28"]["Size"] = UDim2.new(0, 176, 0, 294);
+LMG2L["Frame_28"]["Position"] = UDim2.new(0, 392, 0, 12);
+LMG2L["Frame_28"]["BackgroundTransparency"] = 0.6;
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.Frame.UICorner
+LMG2L["UICorner_29"] = Instance.new("UICorner", LMG2L["Frame_28"]);
+
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.Frame.ScrollingFrame
+LMG2L["ScrollingFrame_2a"] = Instance.new("ScrollingFrame", LMG2L["Frame_28"]);
+LMG2L["ScrollingFrame_2a"]["BorderSizePixel"] = 0;
+LMG2L["ScrollingFrame_2a"]["BackgroundColor3"] = Color3.fromRGB(136, 0, 0);
+LMG2L["ScrollingFrame_2a"]["Size"] = UDim2.new(0, 166, 0, 168);
+LMG2L["ScrollingFrame_2a"]["ScrollBarImageColor3"] = Color3.fromRGB(255, 0, 0);
+LMG2L["ScrollingFrame_2a"]["Position"] = UDim2.new(0, 8, 0, 116);
+LMG2L["ScrollingFrame_2a"]["BackgroundTransparency"] = 0.5;
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.Frame.ScrollingFrame.SpeedBox
+LMG2L["SpeedBox_2b"] = Instance.new("TextBox", LMG2L["ScrollingFrame_2a"]);
+LMG2L["SpeedBox_2b"]["Name"] = [[SpeedBox]];
+LMG2L["SpeedBox_2b"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["SpeedBox_2b"]["BorderSizePixel"] = 0;
+LMG2L["SpeedBox_2b"]["TextWrapped"] = true;
+LMG2L["SpeedBox_2b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["SpeedBox_2b"]["TextScaled"] = true;
+LMG2L["SpeedBox_2b"]["BackgroundColor3"] = Color3.fromRGB(93, 0, 0);
+LMG2L["SpeedBox_2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["SpeedBox_2b"]["PlaceholderText"] = [[Speed (Default is:16)]];
+LMG2L["SpeedBox_2b"]["Size"] = UDim2.new(0, 64, 0, 56);
+LMG2L["SpeedBox_2b"]["Position"] = UDim2.new(0, 88, 0, 10);
+LMG2L["SpeedBox_2b"]["Text"] = [[]];
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.Frame.ScrollingFrame.SpeedBox.UICorner
+LMG2L["UICorner_2c"] = Instance.new("UICorner", LMG2L["SpeedBox_2b"]);
+
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.Frame.ScrollingFrame.SpeedBox.LocalScript
+LMG2L["LocalScript_2d"] = Instance.new("LocalScript", LMG2L["SpeedBox_2b"]);
+
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.Frame.ScrollingFrame.UICorner
+LMG2L["UICorner_2e"] = Instance.new("UICorner", LMG2L["ScrollingFrame_2a"]);
+
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.Frame.ScrollingFrame.InfJump
+LMG2L["InfJump_2f"] = Instance.new("TextButton", LMG2L["ScrollingFrame_2a"]);
+LMG2L["InfJump_2f"]["TextWrapped"] = true;
+LMG2L["InfJump_2f"]["BorderSizePixel"] = 0;
+LMG2L["InfJump_2f"]["TextScaled"] = true;
+LMG2L["InfJump_2f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["InfJump_2f"]["BackgroundColor3"] = Color3.fromRGB(93, 0, 0);
+LMG2L["InfJump_2f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["InfJump_2f"]["Size"] = UDim2.new(0, 64, 0, 56);
+LMG2L["InfJump_2f"]["Text"] = [[Inf jump:off]];
+LMG2L["InfJump_2f"]["Name"] = [[InfJump]];
+LMG2L["InfJump_2f"]["Position"] = UDim2.new(0, 88, 0, 80);
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.Frame.ScrollingFrame.InfJump.UICorner
+LMG2L["UICorner_30"] = Instance.new("UICorner", LMG2L["InfJump_2f"]);
+
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.Frame.ScrollingFrame.InfJump.LocalScript
+LMG2L["LocalScript_31"] = Instance.new("LocalScript", LMG2L["InfJump_2f"]);
+
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.Frame.ScrollingFrame.Rejoin
+LMG2L["Rejoin_32"] = Instance.new("TextButton", LMG2L["ScrollingFrame_2a"]);
+LMG2L["Rejoin_32"]["TextWrapped"] = true;
+LMG2L["Rejoin_32"]["BorderSizePixel"] = 0;
+LMG2L["Rejoin_32"]["TextScaled"] = true;
+LMG2L["Rejoin_32"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Rejoin_32"]["BackgroundColor3"] = Color3.fromRGB(93, 0, 0);
+LMG2L["Rejoin_32"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Rejoin_32"]["Size"] = UDim2.new(0, 64, 0, 56);
+LMG2L["Rejoin_32"]["Text"] = [[Rejoin]];
+LMG2L["Rejoin_32"]["Name"] = [[Rejoin]];
+LMG2L["Rejoin_32"]["Position"] = UDim2.new(0, 14, 0, 10);
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.Frame.ScrollingFrame.Rejoin.UICorner
+LMG2L["UICorner_33"] = Instance.new("UICorner", LMG2L["Rejoin_32"]);
+
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.Frame.ScrollingFrame.Rejoin.LocalScript
+LMG2L["LocalScript_34"] = Instance.new("LocalScript", LMG2L["Rejoin_32"]);
+
+
+
+-- Players.c0llkidd8.PlayerGui.ScreenGui.Frame.Frame.ScrollingFrame.ConsoleButton
+LMG2L["ConsoleButton_35"] = Instance.new("TextButton", LMG2L["ScrollingFrame_2a"]);
+LMG2L["ConsoleButton_35"]["TextWrapped"] 
